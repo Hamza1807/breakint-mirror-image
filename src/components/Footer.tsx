@@ -14,10 +14,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Penetration Testing</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Security Audits</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Vulnerability Assessment</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Incident Response</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Cybersecurity & Penetration Testing</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">OSINT & Threat Intelligence</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Software & Website Development</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Digital Marketing & SEO</a></li>
             </ul>
           </div>
           
