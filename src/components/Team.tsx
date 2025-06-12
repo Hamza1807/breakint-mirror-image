@@ -4,19 +4,19 @@ import { Linkedin, Mail } from 'lucide-react';
 const Team = () => {
   const teamMembers = [
     {
-      name: "Sarah Chen",
+      name: "Hamza Tufail",
       role: "Chief Security Officer",
       bio: "15+ years in cybersecurity with expertise in penetration testing and security architecture. CISSP certified.",
       image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
     },
     {
-      name: "Marcus Rodriguez",
+      name: "Fahad Alsabbagh Alshirazi",
       role: "Lead Penetration Tester",
       bio: "Certified Ethical Hacker with extensive experience in vulnerability assessment and incident response.",
       image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
     },
     {
-      name: "Dr. Emily Watson",
+      name: "Raafay Nouman",
       role: "Security Researcher",
       bio: "PhD in Computer Science, specializing in advanced threat detection and AI-powered security solutions.",
       image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
