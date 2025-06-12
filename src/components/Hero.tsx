@@ -24,15 +24,14 @@ const Hero = () => {
             <Button 
               onClick={() => scrollToSection('about')}
               size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3"
+              className="bg-white text-blue-600 hover:bg-blue-50 hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl"
             >
               Get Started
             </Button>
             <Button 
               onClick={() => scrollToSection('services')}
               size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-3 bg-transparent"
+              className="bg-white text-blue-600 hover:bg-blue-50 hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl"
             >
               Our Services
             </Button>
