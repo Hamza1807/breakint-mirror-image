@@ -1,27 +1,52 @@
 
-import { Shield, Lock, Search, AlertTriangle } from 'lucide-react';
+import { Shield, Lock, Search, AlertTriangle, Smartphone, Palette, GraduationCap, Lightbulb, LinkIcon, CheckCircle, Eye, TrendingUp, Globe } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: Shield,
-      title: "Penetration Testing",
-      description: "Comprehensive security assessments to identify vulnerabilities before attackers do."
+      icon: Smartphone,
+      title: "Application Development",
+      description: "We develop mobile, desktop and web applications utilizing software development best practices, innovations and frameworks by adopting modern application architectures."
     },
     {
-      icon: Lock,
-      title: "Security Audits",
-      description: "In-depth analysis of your security infrastructure and compliance requirements."
+      icon: Palette,
+      title: "UI/UX Designing",
+      description: "Our UI/UX design team has the skills and strategic expertise to deliver unique customer experience, thereby making your business a lot more competitive."
     },
     {
-      icon: Search,
-      title: "Vulnerability Assessment",
-      description: "Systematic evaluation of security weaknesses in your systems and networks."
+      icon: GraduationCap,
+      title: "Professional Trainings",
+      description: "We provide training services in Mobile, Web and Application Development, AWS, Cloud Computing, Software Defined Networks and Networks (CCNA, CCNP, CCIE)."
     },
     {
-      icon: AlertTriangle,
-      title: "Incident Response",
-      description: "Rapid response and recovery services for security breaches and cyber attacks."
+      icon: Lightbulb,
+      title: "IT Consultancy",
+      description: "We provide solutions in variety of software application domains to achieve competitive advantage and fulfil business goals of our valued customers."
+    },
+    {
+      icon: LinkIcon,
+      title: "Blockchain Development",
+      description: "We provide consultancy in assisting and developing applications for the organizations to transform their businesses into Blockchain Technology."
+    },
+    {
+      icon: CheckCircle,
+      title: "Quality Assurance",
+      description: "Our Development processes are aligned with modern principles of software engineering, starting from Requirements Engineering to System Testings."
+    },
+    {
+      icon: Eye,
+      title: "OSINT",
+      description: "Open Source Intelligence gathering and analysis to provide comprehensive insights and threat assessment for your organization's security needs."
+    },
+    {
+      icon: TrendingUp,
+      title: "Marketing",
+      description: "Strategic digital marketing solutions to enhance your brand visibility, engage target audiences, and drive business growth across multiple channels."
+    },
+    {
+      icon: Globe,
+      title: "SEO",
+      description: "Search Engine Optimization services to improve your website's visibility, increase organic traffic, and enhance your online presence in search results."
     }
   ];
 
@@ -31,11 +56,11 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Services</h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            Comprehensive cybersecurity solutions tailored to protect your digital assets and ensure business continuity.
+            Comprehensive digital solutions tailored to protect your assets, grow your business, and ensure technological excellence across all domains.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
