@@ -5,11 +5,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <img 
-                src="/lovable-uploads/eccb8483-8fc6-4cec-9ff0-d4a11bd2d7b9.png" 
-                alt="Syrpak Technologies" 
-                className="h-20 w-auto"
-              />
+              <h2 className="text-xl font-bold text-primary">Syrpak Technologies</h2>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               Leading cybersecurity company providing comprehensive security solutions to protect your digital assets and ensure business continuity.
