@@ -43,12 +43,12 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Illustration */}
+          {/* Right side - Tech/Business Illustration */}
           <div className="hidden lg:flex justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <img 
-              src="/lovable-uploads/2214dbf5-2801-4e11-84ae-e09853fbd422.png" 
-              alt="Business solutions illustration" 
-              className="max-w-full h-auto object-contain"
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" 
+              alt="Professional working on laptop - cybersecurity solutions" 
+              className="max-w-full h-auto object-contain rounded-lg shadow-2xl"
             />
           </div>
         </div>
