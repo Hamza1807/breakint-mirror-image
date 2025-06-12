@@ -28,7 +28,7 @@ const Hero = () => {
               <Button 
                 onClick={() => scrollToSection('about')}
                 size="lg"
-                className="bg-blue-300 text-blue-900 hover:bg-blue-200 hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl rounded-full"
+                className="bg-white text-blue-600 hover:bg-blue-50 hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl rounded-full"
               >
                 Get Started
               </Button>
@@ -36,7 +36,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('services')}
                 size="lg"
                 variant="outline"
-                className="border-2 border-blue-900 text-blue-900 bg-blue-900 hover:bg-blue-800 hover:text-white hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl rounded-full"
+                className="border-2 border-white text-white bg-white hover:bg-blue-600 hover:text-white hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl rounded-full"
               >
                 Our Services
               </Button>
