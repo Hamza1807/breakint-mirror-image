@@ -1,5 +1,5 @@
 
-import { CheckCircle, Users, Zap, Award } from 'lucide-react';
+import { CheckCircle, Users, Zap, Award, TrendingUp, RotateCcw, Target, Lightbulb, Clock, Building } from 'lucide-react';
 
 const WhyUs = () => {
   const reasons = [
@@ -22,6 +22,36 @@ const WhyUs = () => {
       icon: Award,
       title: "Industry Recognition",
       description: "Award-winning cybersecurity solutions trusted by Fortune 500 companies."
+    },
+    {
+      icon: TrendingUp,
+      title: "Business Growth",
+      description: "We help you to achieve your business goals and expand your business by utilizing the best techniques of ICT and R&D."
+    },
+    {
+      icon: RotateCcw,
+      title: "Unlimited Revisions",
+      description: "Our mission is to meet the required needs of our customers. We focus on quality of service and customer satisfaction."
+    },
+    {
+      icon: Target,
+      title: "Supreme Perfection",
+      description: "We develop quality products which are bugs free, easy to scale and proficient in performance."
+    },
+    {
+      icon: Lightbulb,
+      title: "Smart Experience",
+      description: "Having outclass user interface and experience, our products are eye-catching, simple and easy to use."
+    },
+    {
+      icon: Clock,
+      title: "Strict Deadlines",
+      description: "To complete a project on time, we define strict deadlines. For that we divide our project in several modules."
+    },
+    {
+      icon: Building,
+      title: "Reputed Company",
+      description: "Dedication, hard working, motivation and customer satisfaction is key to success. We have achieved a good reputation."
     }
   ];
 
@@ -35,7 +65,7 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {reasons.map((reason, index) => (
             <div 
               key={index}
