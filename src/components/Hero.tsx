@@ -32,7 +32,7 @@ const Hero = () => {
               onClick={() => scrollToSection('services')}
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-3"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-3 bg-transparent"
             >
               Our Services
             </Button>
