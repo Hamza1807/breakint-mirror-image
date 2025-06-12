@@ -1,4 +1,3 @@
-
 import { Linkedin, Mail } from 'lucide-react';
 
 const Team = () => {
@@ -13,7 +12,7 @@ const Team = () => {
       name: "Fahad Alsabbagh Alshirazi",
       role: "Lead Penetration Tester",
       bio: "Certified Ethical Hacker with extensive experience in vulnerability assessment and incident response.",
-      image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
+      image: "/lovable-uploads/9da4b594-3bb2-4956-bbce-0e9d414661f4.png"
     },
     {
       name: "Raafay Nouman",
