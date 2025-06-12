@@ -8,7 +8,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/eccb8483-8fc6-4cec-9ff0-d4a11bd2d7b9.png" 
                 alt="Syrpak Technologies" 
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
