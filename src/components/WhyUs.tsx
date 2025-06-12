@@ -1,28 +1,8 @@
 
-import { CheckCircle, Users, Zap, Award, TrendingUp, RotateCcw, Target, Lightbulb, Clock, Building } from 'lucide-react';
+import { TrendingUp, RotateCcw, Target, Lightbulb, Clock, Building } from 'lucide-react';
 
 const WhyUs = () => {
   const reasons = [
-    {
-      icon: CheckCircle,
-      title: "Proven Track Record",
-      description: "Over 500 successful security assessments with 99.9% client satisfaction rate."
-    },
-    {
-      icon: Users,
-      title: "Expert Team",
-      description: "Certified professionals with industry-leading credentials and real-world experience."
-    },
-    {
-      icon: Zap,
-      title: "Rapid Response",
-      description: "24/7 monitoring and immediate incident response to protect your business."
-    },
-    {
-      icon: Award,
-      title: "Industry Recognition",
-      description: "Award-winning cybersecurity solutions trusted by Fortune 500 companies."
-    },
     {
       icon: TrendingUp,
       title: "Business Growth",
@@ -65,7 +45,7 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
             <div 
               key={index}
