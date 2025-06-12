@@ -18,7 +18,7 @@ const Team = () => {
       name: "Raafay Nouman",
       role: "Security Researcher",
       bio: "PhD in Computer Science, specializing in advanced threat detection and AI-powered security solutions.",
-      image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
+      image: "/lovable-uploads/f6471ce3-3997-444d-b9c8-ed354d0e599e.png"
     }
   ];
 
