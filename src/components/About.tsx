@@ -1,4 +1,6 @@
 
+import { Shield } from 'lucide-react';
+
 const About = () => {
   return (
     <section id="about" className="py-20">
