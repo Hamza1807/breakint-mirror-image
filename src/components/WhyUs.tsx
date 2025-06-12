@@ -29,7 +29,7 @@ const WhyUs = () => {
     <section id="why-us" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose TechBreak?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose syrpak?</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We deliver unparalleled cybersecurity expertise with a commitment to excellence and innovation.
           </p>

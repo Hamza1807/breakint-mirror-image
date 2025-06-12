@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="text-2xl font-bold text-primary mb-4">TechBreak</div>
+            <div className="text-2xl font-bold text-primary mb-4">syrpak</div>
             <p className="text-muted-foreground mb-6 max-w-md">
               Leading cybersecurity company providing comprehensive security solutions to protect your digital assets and ensure business continuity.
             </p>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 TechBreak. All rights reserved.</p>
+          <p>&copy; 2024 syrpak. All rights reserved.</p>
         </div>
       </div>
     </footer>

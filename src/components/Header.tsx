@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">
-            TechBreak
+            syrpak
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -21,9 +21,6 @@ const Header = () => {
             <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Portfolio</a>
             <a href="#team" className="text-foreground hover:text-primary transition-colors">Team</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
-            <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
-              Get Started
-            </button>
           </nav>
 
           <button 
@@ -44,9 +41,6 @@ const Header = () => {
               <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Portfolio</a>
               <a href="#team" className="text-foreground hover:text-primary transition-colors">Team</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
-              <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors w-fit">
-                Get Started
-              </button>
             </div>
           </nav>
         )}
