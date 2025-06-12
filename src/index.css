@@ -19,13 +19,13 @@
     --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 280 100% 70%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 45 100% 51%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,6 +36,21 @@
     --ring: 217 91% 60%;
 
     --radius: 0.5rem;
+
+    /* Custom colorful theme variables */
+    --vibrant-blue: 217 91% 60%;
+    --vibrant-purple: 280 100% 70%;
+    --vibrant-green: 142 76% 36%;
+    --vibrant-orange: 25 95% 53%;
+    --vibrant-pink: 330 81% 60%;
+    --vibrant-teal: 173 58% 39%;
+    --vibrant-yellow: 45 100% 51%;
+    --vibrant-red: 0 84% 60%;
+
+    --gradient-1: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(280 100% 70%) 100%);
+    --gradient-2: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(173 58% 39%) 100%);
+    --gradient-3: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(45 100% 51%) 100%);
+    --gradient-4: linear-gradient(135deg, hsl(330 81% 60%) 0%, hsl(0 84% 60%) 100%);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -60,13 +75,13 @@
     --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 280 100% 70%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 45 100% 51%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -75,6 +90,16 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    --vibrant-blue: 217 91% 60%;
+    --vibrant-purple: 280 100% 70%;
+    --vibrant-green: 142 76% 36%;
+    --vibrant-orange: 25 95% 53%;
+    --vibrant-pink: 330 81% 60%;
+    --vibrant-teal: 173 58% 39%;
+    --vibrant-yellow: 45 100% 51%;
+    --vibrant-red: 0 84% 60%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,5 +125,42 @@
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-purple {
+    background: linear-gradient(135deg, hsl(var(--vibrant-purple)), hsl(var(--vibrant-pink)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-green {
+    background: linear-gradient(135deg, hsl(var(--vibrant-green)), hsl(var(--vibrant-teal)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-orange {
+    background: linear-gradient(135deg, hsl(var(--vibrant-orange)), hsl(var(--vibrant-yellow)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-vibrant-1 {
+    background: var(--gradient-1);
+  }
+  
+  .bg-gradient-vibrant-2 {
+    background: var(--gradient-2);
+  }
+  
+  .bg-gradient-vibrant-3 {
+    background: var(--gradient-3);
+  }
+  
+  .bg-gradient-vibrant-4 {
+    background: var(--gradient-4);
   }
 }

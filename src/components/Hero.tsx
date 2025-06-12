@@ -10,17 +10,17 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-b-[300px]">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-vibrant-blue via-vibrant-purple to-vibrant-pink rounded-b-[300px]">
       <div className="container mx-auto px-6 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white animate-fade-in">
               We provide
-              <span className="block underline decoration-4 decoration-blue-300">solutions</span>
+              <span className="block underline decoration-4 decoration-vibrant-yellow">solutions</span>
               for your business!
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               We specialize in software development, cybersecurity, website development and maintenance, OSINT, marketing and SEO a wide range of IT solutions to meet the evolving needs of modern businesses.
             </p>
             
@@ -28,7 +28,7 @@ const Hero = () => {
               <Button 
                 onClick={() => scrollToSection('about')}
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-blue-50 hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl rounded-full"
+                className="bg-white text-vibrant-blue hover:bg-vibrant-yellow hover:text-white hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl rounded-full"
               >
                 Get Started
               </Button>
@@ -36,7 +36,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('services')}
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-blue-600 font-semibold px-8 py-3 rounded-full"
+                className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-vibrant-purple font-semibold px-8 py-3 rounded-full"
               >
                 Our Services
               </Button>

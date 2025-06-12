@@ -6,55 +6,73 @@ const Services = () => {
     {
       icon: Smartphone,
       title: "Application Development",
-      description: "We develop mobile, desktop and web applications utilizing software development best practices, innovations and frameworks by adopting modern application architectures."
+      description: "We develop mobile, desktop and web applications utilizing software development best practices, innovations and frameworks by adopting modern application architectures.",
+      gradient: "from-vibrant-blue to-vibrant-purple",
+      iconColor: "text-vibrant-blue"
     },
     {
       icon: Palette,
       title: "UI/UX Designing",
-      description: "Our UI/UX design team has the skills and strategic expertise to deliver unique customer experience, thereby making your business a lot more competitive."
+      description: "Our UI/UX design team has the skills and strategic expertise to deliver unique customer experience, thereby making your business a lot more competitive.",
+      gradient: "from-vibrant-pink to-vibrant-red",
+      iconColor: "text-vibrant-pink"
     },
     {
       icon: GraduationCap,
       title: "Professional Trainings",
-      description: "We provide training services in Mobile, Web and Application Development, AWS, Cloud Computing, Software Defined Networks and Networks (CCNA, CCNP, CCIE)."
+      description: "We provide training services in Mobile, Web and Application Development, AWS, Cloud Computing, Software Defined Networks and Networks (CCNA, CCNP, CCIE).",
+      gradient: "from-vibrant-green to-vibrant-teal",
+      iconColor: "text-vibrant-green"
     },
     {
       icon: Lightbulb,
       title: "IT Consultancy",
-      description: "We provide solutions in variety of software application domains to achieve competitive advantage and fulfil business goals of our valued customers."
+      description: "We provide solutions in variety of software application domains to achieve competitive advantage and fulfil business goals of our valued customers.",
+      gradient: "from-vibrant-yellow to-vibrant-orange",
+      iconColor: "text-vibrant-yellow"
     },
     {
       icon: LinkIcon,
       title: "Blockchain Development",
-      description: "We provide consultancy in assisting and developing applications for the organizations to transform their businesses into Blockchain Technology."
+      description: "We provide consultancy in assisting and developing applications for the organizations to transform their businesses into Blockchain Technology.",
+      gradient: "from-vibrant-purple to-vibrant-blue",
+      iconColor: "text-vibrant-purple"
     },
     {
       icon: CheckCircle,
       title: "Quality Assurance",
-      description: "Our Development processes are aligned with modern principles of software engineering, starting from Requirements Engineering to System Testings."
+      description: "Our Development processes are aligned with modern principles of software engineering, starting from Requirements Engineering to System Testings.",
+      gradient: "from-vibrant-teal to-vibrant-green",
+      iconColor: "text-vibrant-teal"
     },
     {
       icon: Eye,
       title: "OSINT",
-      description: "Open Source Intelligence gathering and analysis to provide comprehensive insights and threat assessment for your organization's security needs."
+      description: "Open Source Intelligence gathering and analysis to provide comprehensive insights and threat assessment for your organization's security needs.",
+      gradient: "from-vibrant-orange to-vibrant-red",
+      iconColor: "text-vibrant-orange"
     },
     {
       icon: TrendingUp,
       title: "Marketing",
-      description: "Strategic digital marketing solutions to enhance your brand visibility, engage target audiences, and drive business growth across multiple channels."
+      description: "Strategic digital marketing solutions to enhance your brand visibility, engage target audiences, and drive business growth across multiple channels.",
+      gradient: "from-vibrant-red to-vibrant-pink",
+      iconColor: "text-vibrant-red"
     },
     {
       icon: Globe,
       title: "SEO",
-      description: "Search Engine Optimization services to improve your website's visibility, increase organic traffic, and enhance your online presence in search results."
+      description: "Search Engine Optimization services to improve your website's visibility, increase organic traffic, and enhance your online presence in search results.",
+      gradient: "from-vibrant-blue to-vibrant-teal",
+      iconColor: "text-vibrant-blue"
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-muted/30">
+    <section id="services" className="py-20 bg-gradient-to-br from-vibrant-purple/10 to-vibrant-pink/10">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-purple">Our Services</h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Comprehensive digital solutions tailored to protect your assets, grow your business, and ensure technological excellence across all domains.
           </p>
@@ -64,9 +82,9 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-card p-8 rounded-xl border border-border hover:border-primary/50 transition-all hover:scale-105 group"
+              className={`bg-gradient-to-br ${service.gradient}/10 p-8 rounded-xl border border-border hover:border-primary/50 transition-all hover:scale-105 group backdrop-blur-sm`}
             >
-              <service.icon className="w-12 h-12 text-primary mb-6 group-hover:scale-110 transition-transform" />
+              <service.icon className={`w-12 h-12 ${service.iconColor} mb-6 group-hover:scale-110 transition-transform`} />
               <h3 className="text-xl font-semibold mb-4 text-card-foreground">{service.title}</h3>
               <p className="text-card-foreground/70">{service.description}</p>
             </div>
