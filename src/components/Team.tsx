@@ -49,16 +49,7 @@ const Team = () => {
               
               <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
               <div className="text-primary font-medium mb-4">{member.role}</div>
-              <p className="text-muted-foreground text-sm mb-6 max-w-xs">{member.bio}</p>
-              
-              <div className="flex justify-center space-x-4">
-                <button className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
-                  <Linkedin className="w-4 h-4 text-primary" />
-                </button>
-                <button className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
-                  <Mail className="w-4 h-4 text-primary" />
-                </button>
-              </div>
+              <p className="text-muted-foreground text-sm max-w-xs">{member.bio}</p>
             </div>
           ))}
         </div>
