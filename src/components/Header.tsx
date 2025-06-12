@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -40,7 +41,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/eccb8483-8fc6-4cec-9ff0-d4a11bd2d7b9.png" 
               alt="Syrpak Technologies" 
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </div>
           
