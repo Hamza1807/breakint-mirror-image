@@ -7,25 +7,19 @@ const Team = () => {
       name: "Sarah Chen",
       role: "Chief Security Officer",
       bio: "15+ years in cybersecurity with expertise in penetration testing and security architecture. CISSP certified.",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
     },
     {
       name: "Marcus Rodriguez",
       role: "Lead Penetration Tester",
       bio: "Certified Ethical Hacker with extensive experience in vulnerability assessment and incident response.",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
     },
     {
       name: "Dr. Emily Watson",
       role: "Security Researcher",
       bio: "PhD in Computer Science, specializing in advanced threat detection and AI-powered security solutions.",
-      image: "/placeholder.svg"
-    },
-    {
-      name: "David Kim",
-      role: "Security Consultant",
-      bio: "Former government cybersecurity specialist with expertise in compliance and risk management.",
-      image: "/placeholder.svg"
+      image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
     }
   ];
 
@@ -39,19 +33,23 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex justify-center items-center gap-8 flex-wrap">
           {teamMembers.map((member, index) => (
             <div 
               key={index}
-              className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-all text-center group"
+              className="text-center group"
             >
-              <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <div className="w-16 h-16 bg-muted rounded-full"></div>
+              <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 border-4 border-primary/20 group-hover:border-primary/40 transition-all">
+                <img 
+                  src={member.image} 
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
               <div className="text-primary font-medium mb-4">{member.role}</div>
-              <p className="text-muted-foreground text-sm mb-6">{member.bio}</p>
+              <p className="text-muted-foreground text-sm mb-6 max-w-xs">{member.bio}</p>
               
               <div className="flex justify-center space-x-4">
                 <button className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
