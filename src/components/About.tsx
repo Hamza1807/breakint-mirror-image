@@ -43,99 +43,116 @@ const About = () => {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
               <div className="text-center">
-                {/* Animated Certification Illustration */}
+                {/* Comprehensive Services Illustration */}
                 <div className="relative mb-6 mx-auto">
                   <svg
-                    width="200"
-                    height="200"
-                    viewBox="0 0 200 200"
+                    width="240"
+                    height="240"
+                    viewBox="0 0 240 240"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="max-w-full h-auto"
                   >
-                    {/* Background Circle with Pulse Animation */}
+                    {/* Central Hub */}
                     <circle 
-                      cx="100" 
-                      cy="100" 
-                      r="90" 
-                      fill="rgba(59, 130, 246, 0.1)" 
+                      cx="120" 
+                      cy="120" 
+                      r="30" 
+                      fill="url(#hubGradient)" 
                       className="animate-pulse"
                     />
+                    <text x="120" y="125" textAnchor="middle" fill="white" fontSize="10" fontWeight="bold">HUB</text>
                     
-                    {/* Central Certificate/Shield */}
-                    <g transform="translate(100, 100)">
-                      <path
-                        d="M-25 -35 L25 -35 L30 -25 L30 25 C30 35 15 45 0 45 C-15 45 -30 35 -30 25 L-30 -25 Z"
-                        fill="url(#certGradient)"
-                        className="animate-pulse"
-                        style={{ animationDelay: '0.5s' }}
-                      />
-                      <circle cx="0" cy="-10" r="8" fill="white"/>
-                      <path d="M-4 -10 L-1 -7 L4 -15" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                    {/* OSINT - Top */}
+                    <g className="animate-bounce" style={{ animationDelay: '0s', animationDuration: '3s' }}>
+                      <circle cx="120" cy="40" r="25" fill="#3b82f6"/>
+                      <path d="M110 35 L120 30 L130 35 L125 40 L125 45 L115 45 L115 40 Z" fill="white"/>
+                      <circle cx="120" cy="37" r="3" fill="#3b82f6"/>
+                      <text x="120" y="55" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">OSINT</text>
                     </g>
                     
-                    {/* Floating Certification Badges */}
-                    <g className="animate-bounce" style={{ animationDelay: '0.2s', animationDuration: '3s' }}>
-                      <circle cx="50" cy="60" r="15" fill="#10b981"/>
-                      <text x="50" y="65" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">CISSP</text>
+                    {/* Marketing - Top Right */}
+                    <g className="animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '2.8s' }}>
+                      <circle cx="180" cy="70" r="25" fill="#f59e0b"/>
+                      <path d="M170 65 L175 60 L185 60 L190 65 L185 75 L175 75 Z" fill="white"/>
+                      <circle cx="177" cy="67" r="2" fill="#f59e0b"/>
+                      <text x="180" y="85" textAnchor="middle" fill="white" fontSize="7" fontWeight="bold">Marketing</text>
                     </g>
                     
-                    <g className="animate-bounce" style={{ animationDelay: '0.7s', animationDuration: '2.8s' }}>
-                      <circle cx="150" cy="70" r="15" fill="#f59e0b"/>
-                      <text x="150" y="75" textAnchor="middle" fill="white" fontSize="10" fontWeight="bold">CEH</text>
+                    {/* Software Dev - Right */}
+                    <g className="animate-bounce" style={{ animationDelay: '1s', animationDuration: '3.2s' }}>
+                      <circle cx="200" cy="120" r="25" fill="#10b981"/>
+                      <rect x="190" y="115" width="20" height="10" rx="2" fill="white"/>
+                      <rect x="192" y="117" width="4" height="6" fill="#10b981"/>
+                      <rect x="198" y="117" width="4" height="6" fill="#10b981"/>
+                      <rect x="204" y="117" width="4" height="6" fill="#10b981"/>
+                      <text x="200" y="140" textAnchor="middle" fill="white" fontSize="7" fontWeight="bold">Dev</text>
                     </g>
                     
-                    <g className="animate-bounce" style={{ animationDelay: '1.2s', animationDuration: '3.2s' }}>
-                      <circle cx="60" cy="140" r="15" fill="#ef4444"/>
-                      <text x="60" y="145" textAnchor="middle" fill="white" fontSize="9" fontWeight="bold">OSCP</text>
+                    {/* Cybersecurity - Bottom Right */}
+                    <g className="animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '2.5s' }}>
+                      <circle cx="180" cy="170" r="25" fill="#ef4444"/>
+                      <path d="M175 160 L185 160 L188 165 L188 175 C188 178 185 180 180 180 C175 180 172 178 172 175 L172 165 Z" fill="white"/>
+                      <circle cx="180" cy="163" r="2" fill="#ef4444"/>
+                      <text x="180" y="190" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">Security</text>
                     </g>
                     
-                    {/* Orbiting Security Icons */}
-                    <g className="animate-spin" style={{ animationDuration: '15s' }}>
-                      <g transform="translate(100, 40)">
-                        <circle r="8" fill="#6366f1"/>
-                        <path d="M-3 -3 L0 -6 L3 -3 L3 3 C3 5 1 6 0 6 C-1 6 -3 5 -3 3 Z" fill="white"/>
-                      </g>
+                    {/* SEO - Bottom */}
+                    <g className="animate-bounce" style={{ animationDelay: '2s', animationDuration: '3.5s' }}>
+                      <circle cx="120" cy="200" r="25" fill="#8b5cf6"/>
+                      <path d="M110 195 L115 190 L125 190 L130 195 L125 200 L115 200 Z" fill="white"/>
+                      <circle cx="118" cy="195" r="2" fill="#8b5cf6"/>
+                      <path d="M122 192 L128 198" stroke="#8b5cf6" strokeWidth="2"/>
+                      <text x="120" y="220" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">SEO</text>
                     </g>
                     
-                    <g className="animate-spin" style={{ animationDuration: '12s', animationDirection: 'reverse' }}>
-                      <g transform="translate(160, 100)">
-                        <circle r="8" fill="#8b5cf6"/>
-                        <rect x="-3" y="-3" width="6" height="6" rx="1" fill="white"/>
-                      </g>
-                    </g>
-                    
-                    <g className="animate-spin" style={{ animationDuration: '18s' }}>
-                      <g transform="translate(100, 160)">
-                        <circle r="8" fill="#06b6d4"/>
-                        <circle r="3" fill="white"/>
-                      </g>
-                    </g>
-                    
-                    <g className="animate-spin" style={{ animationDuration: '14s', animationDirection: 'reverse' }}>
-                      <g transform="translate(40, 100)">
-                        <circle r="8" fill="#84cc16"/>
-                        <path d="M-2 -2 L2 -2 L2 2 L-2 2 Z" fill="white"/>
-                        <path d="M-1 0 L1 0" stroke="#84cc16" strokeWidth="1"/>
-                      </g>
+                    {/* Web Development - Left */}
+                    <g className="animate-bounce" style={{ animationDelay: '2.5s', animationDuration: '2.7s' }}>
+                      <circle cx="40" cy="120" r="25" fill="#06b6d4"/>
+                      <rect x="30" y="115" width="20" height="12" rx="2" fill="white"/>
+                      <rect x="32" y="117" width="16" height="2" fill="#06b6d4"/>
+                      <rect x="32" y="120" width="10" height="1" fill="#06b6d4"/>
+                      <rect x="32" y="122" width="12" height="1" fill="#06b6d4"/>
+                      <rect x="32" y="124" width="8" height="1" fill="#06b6d4"/>
+                      <text x="40" y="140" textAnchor="middle" fill="white" fontSize="7" fontWeight="bold">Web Dev</text>
                     </g>
                     
                     {/* Connecting Lines with Animation */}
                     <g className="animate-pulse" style={{ animationDelay: '1s' }}>
-                      <line x1="100" y1="100" x2="50" y2="60" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="2" strokeDasharray="5,5">
-                        <animate attributeName="stroke-dashoffset" values="0;-10;0" dur="2s" repeatCount="indefinite"/>
+                      <line x1="120" y1="120" x2="120" y2="65" stroke="rgba(59, 130, 246, 0.4)" strokeWidth="3" strokeDasharray="8,4">
+                        <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="3s" repeatCount="indefinite"/>
                       </line>
-                      <line x1="100" y1="100" x2="150" y2="70" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="2" strokeDasharray="5,5">
-                        <animate attributeName="stroke-dashoffset" values="0;-10;0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+                      <line x1="120" y1="120" x2="155" y2="85" stroke="rgba(245, 158, 11, 0.4)" strokeWidth="3" strokeDasharray="8,4">
+                        <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="3s" repeatCount="indefinite" begin="0.5s"/>
                       </line>
-                      <line x1="100" y1="100" x2="60" y2="140" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="2" strokeDasharray="5,5">
-                        <animate attributeName="stroke-dashoffset" values="0;-10;0" dur="2s" repeatCount="indefinite" begin="1s"/>
+                      <line x1="120" y1="120" x2="175" y2="120" stroke="rgba(16, 185, 129, 0.4)" strokeWidth="3" strokeDasharray="8,4">
+                        <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="3s" repeatCount="indefinite" begin="1s"/>
                       </line>
+                      <line x1="120" y1="120" x2="155" y2="155" stroke="rgba(239, 68, 68, 0.4)" strokeWidth="3" strokeDasharray="8,4">
+                        <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+                      </line>
+                      <line x1="120" y1="120" x2="120" y2="175" stroke="rgba(139, 92, 246, 0.4)" strokeWidth="3" strokeDasharray="8,4">
+                        <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="3s" repeatCount="indefinite" begin="2s"/>
+                      </line>
+                      <line x1="120" y1="120" x2="65" y2="120" stroke="rgba(6, 182, 212, 0.4)" strokeWidth="3" strokeDasharray="8,4">
+                        <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="3s" repeatCount="indefinite" begin="2.5s"/>
+                      </line>
+                    </g>
+                    
+                    {/* Orbiting Data Points */}
+                    <g className="animate-spin" style={{ animationDuration: '20s' }}>
+                      <circle cx="150" cy="60" r="3" fill="rgba(59, 130, 246, 0.6)"/>
+                      <circle cx="90" cy="180" r="3" fill="rgba(16, 185, 129, 0.6)"/>
+                    </g>
+                    
+                    <g className="animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}>
+                      <circle cx="60" cy="60" r="3" fill="rgba(245, 158, 11, 0.6)"/>
+                      <circle cx="180" cy="180" r="3" fill="rgba(139, 92, 246, 0.6)"/>
                     </g>
                     
                     {/* Definitions */}
                     <defs>
-                      <linearGradient id="certGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <linearGradient id="hubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stopColor="#3b82f6"/>
                         <stop offset="100%" stopColor="#1d4ed8"/>
                       </linearGradient>
@@ -143,9 +160,9 @@ const About = () => {
                   </svg>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-4">Certified Experts</h3>
+                <h3 className="text-2xl font-bold mb-4">Comprehensive Digital Solutions</h3>
                 <p className="text-muted-foreground">
-                  Our team holds industry-leading certifications including CISSP, CEH, and OSCP.
+                  From OSINT investigations to web development, we deliver end-to-end digital solutions.
                 </p>
               </div>
             </div>
