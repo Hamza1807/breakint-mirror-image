@@ -3,14 +3,14 @@ import { Shield, Award, BookOpen, Users, Code, Lock } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-vibrant-green/10 to-vibrant-teal/10 rounded-b-[60px]">
+    <section id="about" className="py-20 bg-background rounded-b-[60px]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient-green">About Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Us</h2>
         </div>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-green">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Protecting What Matters Most
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
@@ -21,20 +21,20 @@ const About = () => {
             </p>
             
             <div className="grid grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-vibrant-blue/20 to-vibrant-purple/20 p-4 rounded-lg">
-                <div className="text-3xl font-bold text-vibrant-blue mb-2">500+</div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
                 <div className="text-muted-foreground">Projects Delivered Across IT & Security</div>
               </div>
-              <div className="bg-gradient-to-br from-vibrant-green/20 to-vibrant-teal/20 p-4 rounded-lg">
-                <div className="text-3xl font-bold text-vibrant-green mb-2">99.9%</div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
                 <div className="text-muted-foreground">Client Satisfaction</div>
               </div>
-              <div className="bg-gradient-to-br from-vibrant-orange/20 to-vibrant-yellow/20 p-4 rounded-lg">
-                <div className="text-3xl font-bold text-vibrant-orange mb-2">24/7</div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
                 <div className="text-muted-foreground">Monitoring Support</div>
               </div>
-              <div className="bg-gradient-to-br from-vibrant-pink/20 to-vibrant-red/20 p-4 rounded-lg">
-                <div className="text-3xl font-bold text-vibrant-pink mb-2">10+</div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">10+</div>
                 <div className="text-muted-foreground">Years Experience</div>
               </div>
             </div>

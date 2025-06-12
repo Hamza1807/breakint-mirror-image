@@ -3,10 +3,10 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-vibrant-teal/10 to-vibrant-green/10">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-green">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to secure your digital infrastructure? Contact our team for a consultation.
           </p>
@@ -18,8 +18,8 @@ const Contact = () => {
             
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-vibrant-blue/20 to-vibrant-purple/20 rounded-lg flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-vibrant-blue" />
+                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                  <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
@@ -28,8 +28,8 @@ const Contact = () => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-vibrant-green/20 to-vibrant-teal/20 rounded-lg flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-vibrant-green" />
+                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                  <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <div className="font-semibold">Phone</div>
@@ -38,8 +38,8 @@ const Contact = () => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-vibrant-orange/20 to-vibrant-yellow/20 rounded-lg flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-vibrant-orange" />
+                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <div className="font-semibold">Location</div>
@@ -49,7 +49,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="bg-gradient-to-br from-vibrant-purple/10 to-vibrant-pink/10 p-8 rounded-xl border border-border backdrop-blur-sm">
+          <div className="bg-card p-8 rounded-xl border border-border">
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
@@ -57,7 +57,7 @@ const Contact = () => {
                   <label className="block text-sm font-medium mb-2">First Name</label>
                   <input 
                     type="text" 
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-vibrant-blue focus:border-transparent bg-background/50 backdrop-blur-sm"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="John"
                   />
                 </div>
@@ -65,7 +65,7 @@ const Contact = () => {
                   <label className="block text-sm font-medium mb-2">Last Name</label>
                   <input 
                     type="text" 
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-vibrant-blue focus:border-transparent bg-background/50 backdrop-blur-sm"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                     placeholder="Doe"
                   />
                 </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                 <label className="block text-sm font-medium mb-2">Email</label>
                 <input 
                   type="email" 
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-vibrant-blue focus:border-transparent bg-background/50 backdrop-blur-sm"
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="john@company.com"
                 />
               </div>
@@ -84,12 +84,12 @@ const Contact = () => {
                 <label className="block text-sm font-medium mb-2">Message</label>
                 <textarea 
                   rows={4}
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-vibrant-blue focus:border-transparent bg-background/50 backdrop-blur-sm"
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   placeholder="Tell us about your security needs..."
                 />
               </div>
               
-              <button className="w-full bg-gradient-to-r from-vibrant-blue to-vibrant-purple text-white py-3 rounded-lg font-semibold hover:from-vibrant-purple hover:to-vibrant-pink transition-all duration-300">
+              <button className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 Send Message
               </button>
             </form>
