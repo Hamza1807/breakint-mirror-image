@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-b-[200px]">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-b-[300px]">
       <div className="container mx-auto px-6 pt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
@@ -20,7 +21,7 @@ const Hero = () => {
               for your business!
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              We specialize in cybersecurity, penetration testing, and digital security solutions that protect your business from evolving threats.
+              We specialize in software development, cybersecurity, website development and maintenance, OSINT, marketing and SEO a wide range of IT solutions to meet the evolving needs of modern businesses.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
