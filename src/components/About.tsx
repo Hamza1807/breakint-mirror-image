@@ -34,7 +34,7 @@ const About = () => {
                 <div className="text-muted-foreground">Monitoring Support</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">10+</div>
+                <div className="text-3xl font-bold text-primary mb-2">2+</div>
                 <div className="text-muted-foreground">Years Experience</div>
               </div>
             </div>
