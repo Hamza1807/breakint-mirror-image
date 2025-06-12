@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
@@ -23,7 +22,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="text-muted-foreground">security@syrpak.com</div>
+                  <div className="text-muted-foreground">falsabbagh@syrpaks.com</div>
                 </div>
               </div>
               
