@@ -43,86 +43,156 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Animated SVG Illustration */}
+          {/* Right side - Advanced Animated SVG Illustration */}
           <div className="hidden lg:flex justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
               <svg
-                width="500"
-                height="400"
-                viewBox="0 0 500 400"
+                width="600"
+                height="500"
+                viewBox="0 0 600 500"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="max-w-full h-auto"
               >
-                {/* Background Circle */}
-                <circle
-                  cx="250"
-                  cy="200"
-                  r="180"
-                  fill="rgba(255,255,255,0.1)"
-                  className="animate-pulse"
-                />
+                {/* Animated Background Grid */}
+                <defs>
+                  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+                  </pattern>
+                  <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#60a5fa" stopOpacity="0.8"/>
+                    <stop offset="50%" stopColor="#34d399" stopOpacity="0.6"/>
+                    <stop offset="100%" stopColor="#a78bfa" stopOpacity="0.8"/>
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                    <feMerge> 
+                      <feMergeNode in="coloredBlur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
                 
-                {/* Laptop Base */}
-                <rect
-                  x="150"
-                  y="220"
-                  width="200"
-                  height="120"
-                  rx="10"
-                  fill="#1e293b"
-                  className="drop-shadow-lg"
-                />
+                <rect width="600" height="500" fill="url(#grid)" opacity="0.3"/>
                 
-                {/* Laptop Screen */}
-                <rect
-                  x="170"
-                  y="150"
-                  width="160"
-                  height="100"
-                  rx="5"
-                  fill="#0f172a"
-                  className="drop-shadow-lg"
-                />
-                
-                {/* Screen Content - Code Lines */}
-                <rect x="180" y="160" width="80" height="3" fill="#22c55e" className="animate-pulse" style={{ animationDelay: '0.5s' }} />
-                <rect x="180" y="170" width="120" height="3" fill="#3b82f6" className="animate-pulse" style={{ animationDelay: '0.8s' }} />
-                <rect x="180" y="180" width="60" height="3" fill="#f59e0b" className="animate-pulse" style={{ animationDelay: '1.1s' }} />
-                <rect x="180" y="190" width="100" height="3" fill="#ef4444" className="animate-pulse" style={{ animationDelay: '1.4s' }} />
-                <rect x="180" y="200" width="80" height="3" fill="#8b5cf6" className="animate-pulse" style={{ animationDelay: '1.7s' }} />
-                
-                {/* Security Shield */}
-                <g transform="translate(350, 100)">
-                  <path
-                    d="M0 20 L20 0 L40 20 L40 60 C40 70 30 80 20 80 C10 80 0 70 0 60 Z"
-                    fill="#22c55e"
-                    className="drop-shadow-lg animate-pulse"
-                    style={{ animationDelay: '2s' }}
-                  />
-                  <path
-                    d="M10 35 L18 42 L30 25"
-                    stroke="white"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
+                {/* Central Hub */}
+                <g transform="translate(300, 250)">
+                  <circle 
+                    r="60" 
+                    fill="url(#glowGradient)" 
+                    filter="url(#glow)"
                     className="animate-pulse"
-                    style={{ animationDelay: '2.5s' }}
                   />
+                  <circle 
+                    r="40" 
+                    fill="rgba(255,255,255,0.9)" 
+                    className="animate-pulse"
+                    style={{ animationDelay: '0.5s' }}
+                  />
+                  <circle 
+                    r="20" 
+                    fill="#1e293b"
+                  />
+                  
+                  {/* Rotating Ring */}
+                  <g className="animate-spin" style={{ animationDuration: '10s' }}>
+                    <circle r="80" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth="2" strokeDasharray="10,5"/>
+                    <circle cx="80" cy="0" r="4" fill="#60a5fa"/>
+                    <circle cx="-80" cy="0" r="4" fill="#34d399"/>
+                    <circle cx="0" cy="80" r="4" fill="#f59e0b"/>
+                    <circle cx="0" cy="-80" r="4" fill="#ef4444"/>
+                  </g>
+                </g>
+                
+                {/* Security Nodes */}
+                <g transform="translate(150, 150)">
+                  <circle r="25" fill="rgba(34, 197, 94, 0.2)" className="animate-pulse" style={{ animationDelay: '1s' }}/>
+                  <path
+                    d="M-10 -5 L0 -15 L10 -5 L10 10 C10 15 5 20 0 20 C-5 20 -10 15 -10 10 Z"
+                    fill="#22c55e"
+                    filter="url(#glow)"
+                  />
+                  <path d="M-5 0 L-2 3 L5 -5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                </g>
+                
+                <g transform="translate(450, 150)">
+                  <circle r="25" fill="rgba(239, 68, 68, 0.2)" className="animate-pulse" style={{ animationDelay: '1.5s' }}/>
+                  <rect x="-8" y="-8" width="16" height="16" rx="2" fill="#ef4444" filter="url(#glow)"/>
+                  <path d="M-4 -4 L4 4 M4 -4 L-4 4" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+                </g>
+                
+                <g transform="translate(150, 350)">
+                  <circle r="25" fill="rgba(59, 130, 246, 0.2)" className="animate-pulse" style={{ animationDelay: '2s' }}/>
+                  <circle r="12" fill="#3b82f6" filter="url(#glow)"/>
+                  <circle r="6" fill="white"/>
+                  <circle r="2" fill="#3b82f6"/>
+                </g>
+                
+                <g transform="translate(450, 350)">
+                  <circle r="25" fill="rgba(168, 85, 247, 0.2)" className="animate-pulse" style={{ animationDelay: '2.5s' }}/>
+                  <rect x="-10" y="-6" width="20" height="12" rx="6" fill="#a855f7" filter="url(#glow)"/>
+                  <circle cx="6" cy="0" r="2" fill="white"/>
+                </g>
+                
+                {/* Animated Connections */}
+                <g className="animate-pulse" style={{ animationDelay: '3s' }}>
+                  <line x1="300" y1="250" x2="150" y2="150" stroke="url(#glowGradient)" strokeWidth="3" strokeDasharray="10,5">
+                    <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="2s" repeatCount="indefinite"/>
+                  </line>
+                  <line x1="300" y1="250" x2="450" y2="150" stroke="url(#glowGradient)" strokeWidth="3" strokeDasharray="10,5">
+                    <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+                  </line>
+                  <line x1="300" y1="250" x2="150" y2="350" stroke="url(#glowGradient)" strokeWidth="3" strokeDasharray="10,5">
+                    <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="2s" repeatCount="indefinite" begin="1s"/>
+                  </line>
+                  <line x1="300" y1="250" x2="450" y2="350" stroke="url(#glowGradient)" strokeWidth="3" strokeDasharray="10,5">
+                    <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+                  </line>
                 </g>
                 
                 {/* Floating Data Particles */}
-                <circle cx="100" cy="100" r="3" fill="#60a5fa" className="animate-bounce" style={{ animationDelay: '0.2s' }} />
-                <circle cx="120" cy="80" r="2" fill="#34d399" className="animate-bounce" style={{ animationDelay: '0.7s' }} />
-                <circle cx="380" cy="250" r="4" fill="#fbbf24" className="animate-bounce" style={{ animationDelay: '1.2s' }} />
-                <circle cx="400" cy="270" r="2" fill="#f87171" className="animate-bounce" style={{ animationDelay: '1.8s' }} />
+                <g className="animate-bounce" style={{ animationDelay: '0.2s' }}>
+                  <circle cx="100" cy="100" r="3" fill="#60a5fa">
+                    <animate attributeName="cy" values="100;80;100" dur="3s" repeatCount="indefinite"/>
+                  </circle>
+                </g>
+                <g className="animate-bounce" style={{ animationDelay: '0.7s' }}>
+                  <rect x="500" y="120" width="6" height="6" rx="1" fill="#34d399">
+                    <animate attributeName="y" values="120;100;120" dur="2.5s" repeatCount="indefinite"/>
+                  </rect>
+                </g>
+                <g className="animate-bounce" style={{ animationDelay: '1.2s' }}>
+                  <polygon points="80,400 86,388 92,400 86,412" fill="#fbbf24">
+                    <animate attributeName="transform" values="translate(0,0);translate(0,-20);translate(0,0)" dur="4s" repeatCount="indefinite"/>
+                  </polygon>
+                </g>
+                <g className="animate-bounce" style={{ animationDelay: '1.8s' }}>
+                  <circle cx="520" cy="380" r="4" fill="#f87171">
+                    <animate attributeName="cy" values="380;360;380" dur="2.8s" repeatCount="indefinite"/>
+                  </circle>
+                </g>
                 
-                {/* Network Connections */}
-                <g className="animate-pulse" style={{ animationDelay: '3s' }}>
-                  <line x1="250" y1="150" x2="350" y2="120" stroke="#60a5fa" strokeWidth="2" strokeDasharray="5,5" />
-                  <line x1="250" y1="200" x2="100" y2="100" stroke="#34d399" strokeWidth="2" strokeDasharray="5,5" />
-                  <line x1="250" y1="250" x2="380" y2="250" stroke="#fbbf24" strokeWidth="2" strokeDasharray="5,5" />
+                {/* Scanning Line Effect */}
+                <line x1="0" y1="250" x2="600" y2="250" stroke="#00ff88" strokeWidth="2" opacity="0.6">
+                  <animate attributeName="y1" values="0;500;0" dur="4s" repeatCount="indefinite"/>
+                  <animate attributeName="y2" values="0;500;0" dur="4s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/>
+                </line>
+                
+                {/* Binary Rain Effect */}
+                <g opacity="0.3">
+                  <text x="50" y="50" fill="#22c55e" fontSize="12" fontFamily="monospace" className="animate-pulse">
+                    01001001
+                    <animateTransform attributeName="transform" type="translate" values="0,0;0,500;0,0" dur="6s" repeatCount="indefinite"/>
+                  </text>
+                  <text x="200" y="30" fill="#3b82f6" fontSize="12" fontFamily="monospace" className="animate-pulse" style={{ animationDelay: '2s' }}>
+                    11010110
+                    <animateTransform attributeName="transform" type="translate" values="0,0;0,500;0,0" dur="8s" repeatCount="indefinite" begin="1s"/>
+                  </text>
+                  <text x="400" y="80" fill="#a855f7" fontSize="12" fontFamily="monospace" className="animate-pulse" style={{ animationDelay: '4s' }}>
+                    10111001
+                    <animateTransform attributeName="transform" type="translate" values="0,0;0,500;0,0" dur="7s" repeatCount="indefinite" begin="2s"/>
+                  </text>
                 </g>
               </svg>
             </div>
