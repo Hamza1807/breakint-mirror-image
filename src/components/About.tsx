@@ -1,3 +1,4 @@
+
 import { Shield } from 'lucide-react';
 
 const About = () => {
@@ -13,10 +14,10 @@ const About = () => {
               Protecting What Matters Most
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              With over a decade of experience in cybersecurity, our team of certified professionals helps organizations stay ahead of cyber threats through proactive security measures and cutting-edge solutions.
+              With expertise spanning OSINT, marketing, software development, cybersecurity, SEO, and website development and maintenance, our team brings over a decade of experience delivering tailored, cutting-edge digital solutions.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              We believe that security should be accessible, understandable, and tailored to each organization's unique needs. Our approach combines technical expertise with clear communication to deliver results that protect and empower your business.
+              We believe in making technology accessible, effective, and aligned with your unique business goals—combining technical excellence with clear communication to protect, grow, and empower your organization.
             </p>
             
             <div className="grid grid-cols-2 gap-8">
