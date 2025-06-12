@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -37,8 +36,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary">
-            syrpak
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/eccb8483-8fc6-4cec-9ff0-d4a11bd2d7b9.png" 
+              alt="Syrpak Technologies" 
+              className="h-10 w-auto"
+            />
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
