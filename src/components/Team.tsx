@@ -6,7 +6,7 @@ const Team = () => {
       name: "Hamza Tufail",
       role: "Chief Security Officer",
       bio: "15+ years in cybersecurity with expertise in penetration testing and security architecture. CISSP certified.",
-      image: "/lovable-uploads/620e769d-5237-4dcd-a92c-9868395bfe73.png"
+      image: "/lovable-uploads/827306b2-1978-422e-9c7c-7041babd22cb.png"
     },
     {
       name: "Fahad Alsabbagh Alshirazi",
