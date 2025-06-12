@@ -14,8 +14,12 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
+            <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
+            <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
+            <a href="#why-us" className="text-foreground hover:text-primary transition-colors">Why Us</a>
+            <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Portfolio</a>
+            <a href="#team" className="text-foreground hover:text-primary transition-colors">Team</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
             <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">
               Get Started
@@ -33,8 +37,12 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-4">
-              <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
+              <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
+              <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
+              <a href="#why-us" className="text-foreground hover:text-primary transition-colors">Why Us</a>
+              <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Portfolio</a>
+              <a href="#team" className="text-foreground hover:text-primary transition-colors">Team</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
               <button className="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors w-fit">
                 Get Started
