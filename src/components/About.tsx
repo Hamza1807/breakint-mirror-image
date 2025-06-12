@@ -1,4 +1,3 @@
-
 import { Shield } from 'lucide-react';
 
 const About = () => {
@@ -23,7 +22,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                <div className="text-muted-foreground">Security Assessments</div>
+                <div className="text-muted-foreground">Projects Delivered Across IT & Security</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
