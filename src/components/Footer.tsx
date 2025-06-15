@@ -8,7 +8,7 @@ const Footer = () => {
               <h2 className="text-xl font-bold text-primary">Syrpak Technologies</h2>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Leading cybersecurity company providing comprehensive security solutions to protect your digital assets and ensure business continuity.
+              Leading technology company providing comprehensive solutions to help businesses grow and succeed in the digital world.
             </p>
           </div>
           
