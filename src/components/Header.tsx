@@ -41,7 +41,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/77f3f989-8dd7-4408-b281-f0b704bd8d87.png" 
               alt="SyrPak Technologies" 
-              className="h-24 w-32 object-contain"
+              className="h-32 w-48 object-contain"
             />
           </div>
           
