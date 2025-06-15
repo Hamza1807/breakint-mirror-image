@@ -35,13 +35,13 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img 
               src="/lovable-uploads/77f3f989-8dd7-4408-b281-f0b704bd8d87.png" 
               alt="SyrPak Technologies" 
-              className="h-32 w-48 object-contain"
+              className="h-40 w-60 object-contain"
             />
           </div>
           
