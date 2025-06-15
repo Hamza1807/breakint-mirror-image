@@ -39,9 +39,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/575c351d-5e7e-4a1e-8144-70e953bd729a.png" 
+              src="/lovable-uploads/77f3f989-8dd7-4408-b281-f0b704bd8d87.png" 
               alt="SyrPak Technologies" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
           
