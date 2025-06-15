@@ -1,3 +1,4 @@
+
 import { Linkedin, Mail } from 'lucide-react';
 
 const Team = () => {
@@ -17,7 +18,7 @@ const Team = () => {
     {
       name: "Raafay Nouman",
       role: "Co Founder",
-      bio: "Co-founder with PhD in Computer Science, specializing in technology innovation and AI-powered security solutions.",
+      bio: "Co-founder specializing in threat intelligence, malware analysis, and digital forensics with expertise in incident response and security automation.",
       image: "/lovable-uploads/f6471ce3-3997-444d-b9c8-ed354d0e599e.png"
     }
   ];
