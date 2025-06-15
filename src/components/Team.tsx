@@ -1,23 +1,24 @@
+
 import { Linkedin, Mail } from 'lucide-react';
 
 const Team = () => {
   const teamMembers = [
     {
       name: "Hamza Tufail",
-      role: "Chief Security Officer",
-      bio: "15+ years in cybersecurity with expertise in penetration testing and security architecture. CISSP certified.",
+      role: "Co Founder",
+      bio: "Co-founder with 15+ years in cybersecurity, leading strategic vision and security architecture. CISSP certified.",
       image: "/lovable-uploads/827306b2-1978-422e-9c7c-7041babd22cb.png"
     },
     {
       name: "Fahad Alsabbagh Alshirazi",
-      role: "Lead Penetration Tester",
-      bio: "Certified Ethical Hacker with extensive experience in vulnerability assessment and incident response.",
+      role: "Founder",
+      bio: "Founder and visionary leader driving innovation in cybersecurity solutions and business growth strategies.",
       image: "/lovable-uploads/9da4b594-3bb2-4956-bbce-0e9d414661f4.png"
     },
     {
       name: "Raafay Nouman",
-      role: "Security Researcher",
-      bio: "PhD in Computer Science, specializing in advanced threat detection and AI-powered security solutions.",
+      role: "Co Founder",
+      bio: "Co-founder with PhD in Computer Science, specializing in technology innovation and AI-powered security solutions.",
       image: "/lovable-uploads/f6471ce3-3997-444d-b9c8-ed354d0e599e.png"
     }
   ];
