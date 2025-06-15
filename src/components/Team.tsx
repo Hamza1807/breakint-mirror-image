@@ -5,7 +5,7 @@ const Team = () => {
     {
       name: "Hamza Tufail",
       role: "Co Founder",
-      bio: "Co-founder specializing in full-stack web development, modern frameworks, and scalable web architecture solutions.",
+      bio: "Co-founder specializing in penetration testing, vulnerability assessment, and cybersecurity consulting with expertise in network security.",
       image: "/lovable-uploads/827306b2-1978-422e-9c7c-7041babd22cb.png"
     },
     {
