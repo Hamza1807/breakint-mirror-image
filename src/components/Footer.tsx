@@ -1,4 +1,5 @@
 
+
 const Footer = () => {
   return (
     <footer className="bg-background border-t border-border py-12">
@@ -9,7 +10,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/77f3f989-8dd7-4408-b281-f0b704bd8d87.png" 
                 alt="SyrPak Technologies" 
-                className="h-16 w-24 object-contain"
+                className="h-20 w-28 object-contain"
               />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
@@ -48,3 +49,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
