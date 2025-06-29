@@ -1,3 +1,4 @@
+
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 const Contact = () => {
@@ -32,7 +33,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Location</div>
-                  <div className="text-muted-foreground">San Francisco, CA</div>
+                  <div className="text-muted-foreground">DFW, Texas</div>
                 </div>
               </div>
             </div>
