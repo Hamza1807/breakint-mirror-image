@@ -1,6 +1,5 @@
 
-
-import { Shield, Lock, Search, AlertTriangle, Smartphone, Palette, GraduationCap, Lightbulb, CheckCircle, Eye, TrendingUp, Globe } from 'lucide-react';
+import { Shield, Lock, Search, AlertTriangle, Smartphone, Palette, GraduationCap, Lightbulb, CheckCircle, Eye, TrendingUp, Globe, FileCheck } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -38,6 +37,11 @@ const Services = () => {
       icon: Globe,
       title: "SEO",
       description: "Search Engine Optimization services to improve your website's visibility, increase organic traffic, and enhance your online presence in search results."
+    },
+    {
+      icon: FileCheck,
+      title: "Cybersecurity Regulatory Compliance",
+      description: "Comprehensive compliance solutions to help organizations meet cybersecurity regulations and industry standards, ensuring data protection and risk management requirements are fulfilled."
     }
   ];
 
