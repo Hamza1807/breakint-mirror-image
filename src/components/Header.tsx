@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -40,7 +38,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/77f3f989-8dd7-4408-b281-f0b704bd8d87.png" 
+              src="/lovable-uploads/5f2dd818-667d-4a43-9ee4-688e98f7c414.png" 
               alt="SyrPak Technologies" 
               className="h-28 w-40 object-contain -my-1"
             />
@@ -209,4 +207,3 @@ const Header = () => {
 };
 
 export default Header;
-
