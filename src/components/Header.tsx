@@ -39,9 +39,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/211e1276-3bf7-4ea8-a273-bd06726c6809.png" 
+              src="/lovable-uploads/77dea72c-1d8d-4ee5-8020-9c153552bfa8.png" 
               alt="SYRPAKS" 
-              className="h-20 w-auto object-contain"
+              className="h-24 w-auto object-contain"
             />
           </div>
           
