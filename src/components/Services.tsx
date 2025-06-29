@@ -1,5 +1,4 @@
-
-import { Shield, Lock, Search, AlertTriangle, Smartphone, Palette, GraduationCap, Lightbulb, LinkIcon, CheckCircle, Eye, TrendingUp, Globe } from 'lucide-react';
+import { Shield, Lock, Search, AlertTriangle, Smartphone, Palette, GraduationCap, Lightbulb, CheckCircle, Eye, TrendingUp, Globe } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -22,11 +21,6 @@ const Services = () => {
       icon: Lightbulb,
       title: "IT Consultancy",
       description: "We provide solutions in variety of software application domains to achieve competitive advantage and fulfil business goals of our valued customers."
-    },
-    {
-      icon: LinkIcon,
-      title: "Blockchain Development",
-      description: "We provide consultancy in assisting and developing applications for the organizations to transform their businesses into Blockchain Technology."
     },
     {
       icon: CheckCircle,
