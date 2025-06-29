@@ -1,3 +1,4 @@
+
 import { Shield, Lock, Search, AlertTriangle, Smartphone, Palette, GraduationCap, Lightbulb, CheckCircle, Eye, TrendingUp, Globe } from 'lucide-react';
 
 const Services = () => {
@@ -5,12 +6,7 @@ const Services = () => {
     {
       icon: Smartphone,
       title: "Application Development",
-      description: "We develop mobile, desktop and web applications utilizing software development best practices, innovations and frameworks by adopting modern application architectures."
-    },
-    {
-      icon: Palette,
-      title: "UI/UX Designing",
-      description: "Our UI/UX design team has the skills and strategic expertise to deliver unique customer experience, thereby making your business a lot more competitive."
+      description: "We develop mobile, desktop and web applications utilizing software development best practices, innovations and frameworks by adopting modern application architectures. Our UI/UX design team has the skills and strategic expertise to deliver unique customer experience, thereby making your business a lot more competitive."
     },
     {
       icon: GraduationCap,
