@@ -1,4 +1,3 @@
-
 import { Linkedin, Mail } from 'lucide-react';
 
 const Team = () => {
@@ -6,7 +5,7 @@ const Team = () => {
     {
       name: "Hamza Tufail",
       role: "Co Founder",
-      bio: "Co-founder specializing in penetration testing, vulnerability assessment, and cybersecurity consulting with expertise in network security.",
+      bio: "Co-founder specializing in web development, full-stack applications, and modern web technologies with expertise in responsive design and user experience.",
       image: "/lovable-uploads/827306b2-1978-422e-9c7c-7041babd22cb.png"
     },
     {
