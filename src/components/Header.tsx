@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -34,13 +35,13 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border">
-      <div className="container mx-auto px-6 py-0">
+      <div className="container mx-auto px-6 -my-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img 
               src="/lovable-uploads/77dea72c-1d8d-4ee5-8020-9c153552bfa8.png" 
               alt="SYRPAKS" 
-              className="h-32 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
           </div>
           
