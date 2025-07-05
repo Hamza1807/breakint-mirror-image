@@ -4,18 +4,18 @@ import { Linkedin } from 'lucide-react';
 const Team = () => {
   const teamMembers = [
     {
-      name: "Fahad Alsabbagh Alshirazi",
-      role: "Founder & CEO",
-      bio: "Founder and visionary leader driving innovation in cybersecurity solutions and business growth strategies with expertise in enterprise security architecture.",
-      image: "/lovable-uploads/9da4b594-3bb2-4956-bbce-0e9d414661f4.png",
-      linkedin: "https://www.linkedin.com/in/fahed-alsabbagh/"
-    },
-    {
       name: "Hamza Tufail",
       role: "Co-Founder & CTO",
       bio: "Co-founder specializing in web development, full-stack applications, and modern web technologies with expertise in responsive design and user experience optimization.",
       image: "/lovable-uploads/827306b2-1978-422e-9c7c-7041babd22cb.png",
       linkedin: "https://www.linkedin.com/in/hamza-tufail1708/"
+    },
+    {
+      name: "Fahad Alsabbagh Alshirazi",
+      role: "Founder & CEO",
+      bio: "Founder and visionary leader driving innovation in cybersecurity solutions and business growth strategies with expertise in enterprise security architecture.",
+      image: "/lovable-uploads/9da4b594-3bb2-4956-bbce-0e9d414661f4.png",
+      linkedin: "https://www.linkedin.com/in/fahed-alsabbagh/"
     },
     {
       name: "Muhammad Raafay",
