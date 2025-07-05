@@ -1,47 +1,47 @@
 
-import { Smartphone, GraduationCap, Lightbulb, CheckCircle, Eye, TrendingUp, Globe, FileCheck } from 'lucide-react';
+import { Shield, Lock, Search, AlertTriangle, Smartphone, Palette, GraduationCap, Lightbulb, CheckCircle, Eye, TrendingUp, Globe, FileCheck } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: Smartphone,
-      title: "Custom Web & Application Development",
-      description: "Professional web development services in Pakistan utilizing cutting-edge frameworks and modern application architectures. Our expert UI/UX design team delivers unique customer experiences, making your business more competitive in the digital marketplace."
+      title: "Web / Application Development",
+      description: "We develop mobile, desktop and web applications utilizing software development best practices, innovations and frameworks by adopting modern application architectures. Our UI/UX design team has the skills and strategic expertise to deliver unique customer experience, thereby making your business a lot more competitive."
     },
     {
       icon: GraduationCap,
-      title: "Professional IT Training & Certification",
-      description: "Comprehensive training programs in Mobile Development, Web Development, Application Development, AWS Cloud Computing, Software Defined Networks, and Cisco certifications (CCNA, CCNP, CCIE) to upskill your team."
+      title: "Professional Trainings",
+      description: "We provide training services in Mobile, Web and Application Development, AWS, Cloud Computing, Software Defined Networks and Networks (CCNA, CCNP, CCIE)."
     },
     {
       icon: Lightbulb,
-      title: "Strategic IT Consultancy Services",
-      description: "Expert IT consulting solutions across various software application domains to help Pakistani businesses achieve competitive advantage and fulfill their digital transformation goals with proven methodologies."
+      title: "IT Consultancy",
+      description: "We provide solutions in variety of software application domains to achieve competitive advantage and fulfil business goals of our valued customers."
     },
     {
       icon: CheckCircle,
-      title: "Quality Assurance & Testing",
-      description: "Our development processes align with modern software engineering principles, from Requirements Engineering to comprehensive System Testing, ensuring bug-free, scalable, and high-performance applications."
+      title: "Quality Assurance",
+      description: "Our Development processes are aligned with modern principles of software engineering, starting from Requirements Engineering to System Testings."
     },
     {
       icon: Eye,
-      title: "OSINT Intelligence Services",
-      description: "Professional Open Source Intelligence gathering and analysis services providing comprehensive insights, threat assessment, and security intelligence for organizations across Pakistan and internationally."
+      title: "OSINT",
+      description: "Open Source Intelligence gathering and analysis to provide comprehensive insights and threat assessment for your organization's security needs."
     },
     {
       icon: TrendingUp,
-      title: "Digital Marketing & Brand Growth",
-      description: "Strategic digital marketing solutions to enhance brand visibility, engage target audiences, and drive business growth across multiple channels including social media, content marketing, and paid advertising."
+      title: "Marketing",
+      description: "Strategic digital marketing solutions to enhance your brand visibility, engage target audiences, and drive business growth across multiple channels."
     },
     {
       icon: Globe,
-      title: "SEO & Search Marketing",
-      description: "Professional Search Engine Optimization services to improve website visibility, increase organic traffic, and enhance online presence in search results for Pakistani and international markets."
+      title: "SEO",
+      description: "Search Engine Optimization services to improve your website's visibility, increase organic traffic, and enhance your online presence in search results."
     },
     {
       icon: FileCheck,
-      title: "Cybersecurity & Regulatory Compliance",
-      description: "Comprehensive cybersecurity compliance solutions helping organizations meet industry regulations and standards, ensuring data protection, risk management, and security requirements are fulfilled."
+      title: "Cybersecurity Regulatory Compliance",
+      description: "Comprehensive compliance solutions to help organizations meet cybersecurity regulations and industry standards, ensuring data protection and risk management requirements are fulfilled."
     }
   ];
 
@@ -49,22 +49,22 @@ const Services = () => {
     <section id="services" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our IT & Cybersecurity Services</h2>
-          <p className="text-xl text-foreground/80 max-w-4xl mx-auto">
-            Comprehensive digital solutions tailored to protect your assets, accelerate business growth, and ensure technological excellence across all domains. Serving businesses throughout Pakistan with world-class IT services.
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Services</h2>
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
+            Comprehensive digital solutions tailored to protect your assets, grow your business, and ensure technological excellence across all domains.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <article 
+            <div 
               key={index}
               className="bg-card p-8 rounded-xl border border-border hover:border-primary/50 transition-all hover:scale-105 group"
             >
               <service.icon className="w-12 h-12 text-primary mb-6 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-semibold mb-4 text-card-foreground">{service.title}</h3>
               <p className="text-card-foreground/70">{service.description}</p>
-            </article>
+            </div>
           ))}
         </div>
       </div>
