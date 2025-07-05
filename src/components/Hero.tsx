@@ -16,10 +16,10 @@ const Hero = () => {
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white animate-fade-in">
-              Leading IT Solutions & Cybersecurity Services in Pakistan
+              Leading IT Solutions & Cybersecurity Services
             </h1>
             <h2 className="text-xl md:text-2xl text-blue-100 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Expert software development, cybersecurity, web development, OSINT, digital marketing and SEO solutions for modern businesses across Pakistan
+              Expert software development, cybersecurity, web development, OSINT, digital marketing and SEO solutions for modern businesses across the US and global markets
             </h2>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>

@@ -6,17 +6,17 @@ const Services = () => {
     {
       icon: Smartphone,
       title: "Web & Mobile Application Development",
-      description: "Professional web and mobile application development using modern frameworks and best practices. Our UI/UX design team delivers exceptional user experiences that make your business competitive in Pakistan's digital market."
+      description: "Professional web and mobile application development using modern frameworks and best practices. Our UI/UX design team delivers exceptional user experiences that make your business competitive in today's digital market."
     },
     {
       icon: GraduationCap,
       title: "Professional IT Training Programs",
-      description: "Comprehensive training services in Mobile & Web Development, AWS Cloud Computing, Software Defined Networks, and Cisco certifications (CCNA, CCNP, CCIE) for Pakistan's IT professionals."
+      description: "Comprehensive training services in Mobile & Web Development, AWS Cloud Computing, Software Defined Networks, and Cisco certifications (CCNA, CCNP, CCIE) for IT professionals globally."
     },
     {
       icon: Lightbulb,
       title: "Strategic IT Consultancy Services",
-      description: "Expert IT consultancy solutions across various software domains to help Pakistani businesses achieve competitive advantages and fulfill their digital transformation goals."
+      description: "Expert IT consultancy solutions across various software domains to help businesses achieve competitive advantages and fulfill their digital transformation goals."
     },
     {
       icon: CheckCircle,
@@ -26,17 +26,17 @@ const Services = () => {
     {
       icon: Eye,
       title: "OSINT Intelligence Services",
-      description: "Professional Open Source Intelligence gathering and analysis services providing comprehensive threat assessment and security insights for organizations across Pakistan."
+      description: "Professional Open Source Intelligence gathering and analysis services providing comprehensive threat assessment and security insights for organizations worldwide."
     },
     {
       icon: TrendingUp,
       title: "Digital Marketing Solutions",
-      description: "Strategic digital marketing services to enhance brand visibility, engage target audiences, and drive business growth across multiple online channels in Pakistan's market."
+      description: "Strategic digital marketing services to enhance brand visibility, engage target audiences, and drive business growth across multiple online channels in competitive markets."
     },
     {
       icon: Globe,
       title: "SEO & Online Visibility",
-      description: "Professional Search Engine Optimization services to improve website rankings, increase organic traffic, and enhance online presence for Pakistani businesses."
+      description: "Professional Search Engine Optimization services to improve website rankings, increase organic traffic, and enhance online presence for businesses globally."
     },
     {
       icon: FileCheck,
@@ -51,7 +51,7 @@ const Services = () => {
         <header className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Professional IT Services</h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            Comprehensive digital solutions tailored for Pakistani businesses - from cybersecurity and web development to digital marketing and professional training programs.
+            Comprehensive digital solutions tailored for businesses worldwide - from cybersecurity and web development to digital marketing and professional training programs.
           </p>
         </header>
 

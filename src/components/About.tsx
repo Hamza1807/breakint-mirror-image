@@ -1,3 +1,4 @@
+
 import { Shield, Award, BookOpen, Users, Code, Lock } from 'lucide-react';
 
 const About = () => {
@@ -10,13 +11,13 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <article>
             <h3 className="text-4xl md:text-5xl font-bold mb-6">
-              Protecting What Matters Most in Pakistan's Digital Landscape
+              Protecting What Matters Most in Today's Digital Landscape
             </h3>
             <p className="text-lg text-muted-foreground mb-6">
-              With expertise spanning OSINT, digital marketing, software development, cybersecurity, SEO, and website development and maintenance, our Pakistan-based team brings comprehensive experience delivering tailored, cutting-edge digital solutions across diverse industries.
+              With expertise spanning OSINT, digital marketing, software development, cybersecurity, SEO, and website development and maintenance, our US-headquartered team brings comprehensive experience delivering tailored, cutting-edge digital solutions across diverse industries.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              We believe in making technology accessible, effective, and aligned with your unique business goals—combining technical excellence with clear communication to protect, grow, and empower organizations throughout Pakistan and beyond.
+              We believe in making technology accessible, effective, and aligned with your unique business goals—combining technical excellence with clear communication to protect, grow, and empower organizations throughout the United States and internationally.
             </p>
             
             <div className="grid grid-cols-2 gap-8">

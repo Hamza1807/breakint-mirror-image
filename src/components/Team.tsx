@@ -16,7 +16,7 @@ const Team = () => {
       image: "/lovable-uploads/9da4b594-3bb2-4956-bbce-0e9d414661f4.png"
     },
     {
-      name: "Raafay Nouman",
+      name: "Muhammad Raafay",
       role: "Co Founder", 
       bio: "Co-founder specializing in threat intelligence, malware analysis, and digital forensics with expertise in incident response and security automation.",
       image: "/lovable-uploads/f6471ce3-3997-444d-b9c8-ed354d0e599e.png"
@@ -29,7 +29,7 @@ const Team = () => {
         <header className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Meet Our Expert Team</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our certified IT and cybersecurity experts bring years of combined experience to deliver exceptional digital solutions for businesses across Pakistan.
+            Our certified IT and cybersecurity experts bring years of combined experience to deliver exceptional digital solutions for businesses across the US and international markets.
           </p>
         </header>
 
