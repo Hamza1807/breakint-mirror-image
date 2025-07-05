@@ -16,19 +16,18 @@ const Hero = () => {
           {/* Left side - Text content */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white animate-fade-in">
-              We provide
-              <span className="block underline decoration-4 decoration-blue-300">solutions</span>
-              for your business!
+              Leading IT Solutions & Cybersecurity Services in Pakistan
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              We specialize in software development, cybersecurity, website development and maintenance, OSINT, marketing and SEO a wide range of IT solutions to meet the evolving needs of modern businesses.
-            </p>
+            <h2 className="text-xl md:text-2xl text-blue-100 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              Expert web development, cybersecurity, OSINT, digital marketing, and IT consultancy services. Empowering Pakistani businesses with cutting-edge technology solutions for digital transformation and growth.
+            </h2>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <Button 
                 onClick={() => scrollToSection('about')}
                 size="lg"
                 className="bg-white text-blue-600 hover:bg-blue-50 hover:scale-105 font-semibold px-8 py-3 shadow-lg transition-all duration-300 transform hover:shadow-xl rounded-full"
+                aria-label="Learn more about Syrpak Technologies"
               >
                 Get Started
               </Button>
@@ -37,6 +36,7 @@ const Hero = () => {
                 size="lg"
                 variant="outline"
                 className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-blue-600 font-semibold px-8 py-3 rounded-full"
+                aria-label="View our IT and cybersecurity services"
               >
                 Our Services
               </Button>

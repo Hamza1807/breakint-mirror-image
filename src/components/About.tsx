@@ -1,3 +1,4 @@
+
 import { Shield, Award, BookOpen, Users, Code, Lock } from 'lucide-react';
 
 const About = () => {
@@ -5,36 +6,39 @@ const About = () => {
     <section id="about" className="py-20 bg-background rounded-b-[60px]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Us</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Syrpak Technologies</h2>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            Pakistan's premier technology company delivering comprehensive IT solutions since 2023
+          </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Protecting What Matters Most
-            </h2>
+            <h3 className="text-4xl md:text-5xl font-bold mb-6">
+              Protecting What Matters Most for Pakistani Businesses
+            </h3>
             <p className="text-lg text-muted-foreground mb-6">
-              With expertise spanning OSINT, marketing, software development, cybersecurity, SEO, and website development and maintenance, our team brings over a decade of experience delivering tailored, cutting-edge digital solutions.
+              With specialized expertise spanning OSINT investigations, strategic digital marketing, custom software development, advanced cybersecurity solutions, search engine optimization, and comprehensive website development and maintenance, our team brings over a decade of combined experience delivering tailored, cutting-edge digital solutions across Pakistan.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              We believe in making technology accessible, effective, and aligned with your unique business goals—combining technical excellence with clear communication to protect, grow, and empower your organization.
+              We believe in making technology accessible, effective, and aligned with your unique business goals—combining technical excellence with clear communication to protect, grow, and empower organizations throughout Pakistan and beyond.
             </p>
             
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                <div className="text-muted-foreground">Projects Delivered Across IT & Security</div>
+                <div className="text-muted-foreground">IT & Security Projects Delivered</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
-                <div className="text-muted-foreground">Client Satisfaction</div>
+                <div className="text-muted-foreground">Client Satisfaction Rate</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <div className="text-muted-foreground">Monitoring Support</div>
+                <div className="text-muted-foreground">Technical Support & Monitoring</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">2+</div>
-                <div className="text-muted-foreground">Years Experience</div>
+                <div className="text-muted-foreground">Years Serving Pakistan's IT Needs</div>
               </div>
             </div>
           </div>
