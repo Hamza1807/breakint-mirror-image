@@ -1,23 +1,22 @@
-
 import { Shield, Award, BookOpen, Users, Code, Lock } from 'lucide-react';
 
 const About = () => {
   return (
     <section id="about" className="py-20 bg-background rounded-b-[60px]">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Us</h2>
-        </div>
+        <header className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">About SyrPaks - Premier IT Solutions Company</h2>
+        </header>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Protecting What Matters Most
-            </h2>
+          <article>
+            <h3 className="text-4xl md:text-5xl font-bold mb-6">
+              Protecting What Matters Most in Pakistan's Digital Landscape
+            </h3>
             <p className="text-lg text-muted-foreground mb-6">
-              With expertise spanning OSINT, marketing, software development, cybersecurity, SEO, and website development and maintenance, our team brings over a decade of experience delivering tailored, cutting-edge digital solutions.
+              With expertise spanning OSINT, digital marketing, software development, cybersecurity, SEO, and website development and maintenance, our Pakistan-based team brings comprehensive experience delivering tailored, cutting-edge digital solutions across diverse industries.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              We believe in making technology accessible, effective, and aligned with your unique business goals—combining technical excellence with clear communication to protect, grow, and empower your organization.
+              We believe in making technology accessible, effective, and aligned with your unique business goals—combining technical excellence with clear communication to protect, grow, and empower organizations throughout Pakistan and beyond.
             </p>
             
             <div className="grid grid-cols-2 gap-8">
@@ -27,20 +26,20 @@ const About = () => {
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
-                <div className="text-muted-foreground">Client Satisfaction</div>
+                <div className="text-muted-foreground">Client Satisfaction Rate</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <div className="text-muted-foreground">Monitoring Support</div>
+                <div className="text-muted-foreground">Technical Support</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">2+</div>
-                <div className="text-muted-foreground">Years Experience</div>
+                <div className="text-muted-foreground">Years Industry Experience</div>
               </div>
             </div>
-          </div>
+          </article>
           
-          <div className="relative">
+          <aside className="relative">
             <div className="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
               <div className="flex flex-col items-center justify-center h-full">
                 {/* Comprehensive Services Illustration */}
@@ -168,7 +167,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>

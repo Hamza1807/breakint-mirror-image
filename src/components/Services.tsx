@@ -1,70 +1,70 @@
 
-import { Shield, Lock, Search, AlertTriangle, Smartphone, Palette, GraduationCap, Lightbulb, CheckCircle, Eye, TrendingUp, Globe, FileCheck } from 'lucide-react';
+import { Smartphone, GraduationCap, Lightbulb, CheckCircle, Eye, TrendingUp, Globe, FileCheck } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: Smartphone,
-      title: "Web / Application Development",
-      description: "We develop mobile, desktop and web applications utilizing software development best practices, innovations and frameworks by adopting modern application architectures. Our UI/UX design team has the skills and strategic expertise to deliver unique customer experience, thereby making your business a lot more competitive."
+      title: "Web & Mobile Application Development",
+      description: "Professional web and mobile application development using modern frameworks and best practices. Our UI/UX design team delivers exceptional user experiences that make your business competitive in Pakistan's digital market."
     },
     {
       icon: GraduationCap,
-      title: "Professional Trainings",
-      description: "We provide training services in Mobile, Web and Application Development, AWS, Cloud Computing, Software Defined Networks and Networks (CCNA, CCNP, CCIE)."
+      title: "Professional IT Training Programs",
+      description: "Comprehensive training services in Mobile & Web Development, AWS Cloud Computing, Software Defined Networks, and Cisco certifications (CCNA, CCNP, CCIE) for Pakistan's IT professionals."
     },
     {
       icon: Lightbulb,
-      title: "IT Consultancy",
-      description: "We provide solutions in variety of software application domains to achieve competitive advantage and fulfil business goals of our valued customers."
+      title: "Strategic IT Consultancy Services",
+      description: "Expert IT consultancy solutions across various software domains to help Pakistani businesses achieve competitive advantages and fulfill their digital transformation goals."
     },
     {
       icon: CheckCircle,
-      title: "Quality Assurance",
-      description: "Our Development processes are aligned with modern principles of software engineering, starting from Requirements Engineering to System Testings."
+      title: "Quality Assurance & Testing",
+      description: "Our QA processes align with modern software engineering principles, from Requirements Engineering to comprehensive System Testing, ensuring reliable software delivery."
     },
     {
       icon: Eye,
-      title: "OSINT",
-      description: "Open Source Intelligence gathering and analysis to provide comprehensive insights and threat assessment for your organization's security needs."
+      title: "OSINT Intelligence Services",
+      description: "Professional Open Source Intelligence gathering and analysis services providing comprehensive threat assessment and security insights for organizations across Pakistan."
     },
     {
       icon: TrendingUp,
-      title: "Marketing",
-      description: "Strategic digital marketing solutions to enhance your brand visibility, engage target audiences, and drive business growth across multiple channels."
+      title: "Digital Marketing Solutions",
+      description: "Strategic digital marketing services to enhance brand visibility, engage target audiences, and drive business growth across multiple online channels in Pakistan's market."
     },
     {
       icon: Globe,
-      title: "SEO",
-      description: "Search Engine Optimization services to improve your website's visibility, increase organic traffic, and enhance your online presence in search results."
+      title: "SEO & Online Visibility",
+      description: "Professional Search Engine Optimization services to improve website rankings, increase organic traffic, and enhance online presence for Pakistani businesses."
     },
     {
       icon: FileCheck,
-      title: "Cybersecurity Regulatory Compliance",
-      description: "Comprehensive compliance solutions to help organizations meet cybersecurity regulations and industry standards, ensuring data protection and risk management requirements are fulfilled."
+      title: "Cybersecurity & Compliance",
+      description: "Comprehensive cybersecurity solutions and regulatory compliance services helping organizations meet security standards, data protection requirements, and risk management protocols."
     }
   ];
 
   return (
     <section id="services" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Services</h2>
+        <header className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Professional IT Services</h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            Comprehensive digital solutions tailored to protect your assets, grow your business, and ensure technological excellence across all domains.
+            Comprehensive digital solutions tailored for Pakistani businesses - from cybersecurity and web development to digital marketing and professional training programs.
           </p>
-        </div>
+        </header>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
+            <article 
               key={index}
               className="bg-card p-8 rounded-xl border border-border hover:border-primary/50 transition-all hover:scale-105 group"
             >
               <service.icon className="w-12 h-12 text-primary mb-6 group-hover:scale-110 transition-transform" />
               <h3 className="text-xl font-semibold mb-4 text-card-foreground">{service.title}</h3>
               <p className="text-card-foreground/70">{service.description}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
