@@ -1,4 +1,3 @@
-
 import { Shield, Award, BookOpen, Users, Code, Lock } from 'lucide-react';
 
 const About = () => {
@@ -42,9 +41,9 @@ const About = () => {
           
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
-              <div className="text-center">
+              <div className="flex flex-col items-center justify-center h-full">
                 {/* Comprehensive Services Illustration */}
-                <div className="relative mb-6 mx-auto">
+                <div className="flex-1 flex items-center justify-center mb-6">
                   <svg
                     width="240"
                     height="240"
@@ -160,10 +159,12 @@ const About = () => {
                   </svg>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-4">Comprehensive Digital Solutions</h3>
-                <p className="text-muted-foreground">
-                  From OSINT investigations to web development, we deliver end-to-end digital solutions.
-                </p>
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold mb-4">Comprehensive Digital Solutions</h3>
+                  <p className="text-muted-foreground">
+                    From OSINT investigations to web development, we deliver end-to-end digital solutions.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
