@@ -11,7 +11,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/hamza-tufail1708/"
     },
     {
-      name: "Fahad Alsabbagh Alshirazi",
+      name: "Fahed Alsabbagh Alshirazi",
       role: "Founder & CEO",
       bio: "Founder and visionary leader driving innovation in cybersecurity solutions and business growth strategies with expertise in enterprise security architecture.",
       image: "/lovable-uploads/9da4b594-3bb2-4956-bbce-0e9d414661f4.png",
@@ -30,7 +30,7 @@ const Team = () => {
     <section id="team" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <header className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Meet Our Expert Leadership Team</h2>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Meet Our Expert Leadership Team</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Our certified IT and cybersecurity experts bring years of combined experience to deliver exceptional digital solutions for businesses across the US and international markets. Connect with our leadership team on LinkedIn.
           </p>
@@ -50,10 +50,11 @@ const Team = () => {
                   alt={`${member.name} - ${member.role} at SyrPaks IT Solutions`}
                   className="w-full h-full object-cover object-center"
                   itemProp="image"
+                  loading="lazy"
                 />
               </div>
               
-              <h3 className="text-xl font-semibold mb-2" itemProp="name">{member.name}</h3>
+              <h2 className="text-xl font-semibold mb-2" itemProp="name">{member.name}</h2>
               <div className="text-primary font-medium mb-4" itemProp="jobTitle">{member.role}</div>
               <p className="text-muted-foreground text-sm max-w-xs mx-auto mb-4" itemProp="description">{member.bio}</p>
               
