@@ -1,6 +1,9 @@
 
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
 
 # Sitemap
 Sitemap: https://syrpaks.com/sitemap.xml
@@ -8,9 +11,11 @@ Sitemap: https://syrpaks.com/sitemap.xml
 # Specific bot permissions
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -18,5 +23,8 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-# Crawl delay
-Crawl-delay: 1
+User-agent: LinkedInBot
+Allow: /
+
+# Crawl delay for other bots
+Crawl-delay: 2
